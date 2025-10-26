@@ -14,6 +14,9 @@ function App() {
       index: true, element: <Home />
     },
     {
+      path: "/startframework", element: <Home />
+    },
+    {
       path: "/home", element: <Home />
     },
     {
