@@ -1,0 +1,94 @@
+body {
+  margin-top: 106px;
+}
+
+.nav-bg {
+    background-color: #2C3E50;
+}
+
+.home-bg, .about-bg {
+    background-color: #1ABC9C;
+}
+
+.home-img {
+    width: 20%;
+}
+
+.portfolio-header {
+    color: #2C3E50;
+}
+
+.port-line {
+    height: 4px;
+    width: 80px;
+    background-color: #2C3E50;
+}
+
+.line {
+    height: 4px;
+    width: 80px;
+    background-color: white;
+}
+
+.footer-bg {
+    background-color: #2C3E50;
+
+}
+
+.footer2-bg {
+    background-color: #1A252F;
+}
+
+.nav-item .active {
+    background-color: #1ABC9C;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+.layer {
+  background-color: rgba(26, 188, 156, 0.8);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.col-md-6.col-lg-4:hover .layer {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.animate-pop {
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.modal.show .animate-pop {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal-backdrop.show {
+  background-color: rgba(13, 110, 253, 0.5);
+}
+
+.big-image {
+  width: 600px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-button {
+  background-color: #1abc9c;
+}
+
+.form-button:hover {
+  background-color: #1abc9c;
+}
+
+.top-label {
+  color: #1abc9c;
+  transition: 0.6s top;
+  top: 40px;
+}
