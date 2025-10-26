@@ -9,30 +9,35 @@ import Layout from "./components/Layout/Layout"
 
 function App() {
   const router = createBrowserRouter([
-    {path: "", element: <Layout/> , children: [
-      {
-      index: true, element: <Home />
-    },
     {
-      path: "/home", element: <Home />
-    },
-    {
-      path: "/about", element: <About />
-    },
-    {
-      path: "/portfolio", element: <Portfolio />
-    },
-    {
-      path: "/contact", element: <Contact />
+      path: "", element: <Layout />, children: [
+        {
+          index: true, element: <Home />
+        },
+        {
+          path: "/home", element: <Home />
+        },
+        {
+          path: "/about", element: <About />
+        },
+        {
+          path: "/portfolio", element: <Portfolio />
+        },
+        {
+          path: "/contact", element: <Contact />
+        }
+      ]
     }
-    ]}
-  ]
+  ],
+    {
+      basename: "/startframework",
+    }
 
   )
 
   return (
     <>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
   )
 }
