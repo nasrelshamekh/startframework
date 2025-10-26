@@ -1,4 +1,4 @@
-import { createBrowserRouter, createHashRouter, HashRouter, RouterProvider } from "react-router"
+import { createBrowserRouter, RouterProvider } from "react-router"
 import Home from "./components/Home/Home"
 import About from "./components/About/About"
 import Portfolio from "./components/Portfolio/Portfolio"
@@ -8,13 +8,10 @@ import Layout from "./components/Layout/Layout"
 
 
 function App() {
-  const router = createHashRouter([
+  const router = createBrowserRouter([
     {path: "", element: <Layout/> , children: [
       {
       index: true, element: <Home />
-    },
-    {
-      path: "/startframework/", element: <Home />
     },
     {
       path: "/home", element: <Home />
@@ -35,7 +32,7 @@ function App() {
 
   return (
     <>
-      <HashRouter router={router}/>
+      <RouterProvider router={router}/>
     </>
   )
 }
