@@ -30,7 +30,7 @@ function App() {
     }
   ],
     {
-      basename: "/startframework",
+      basename: "/startframework/",
     }
 
   )
